@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>英语空间 · English Space</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="app">
+    <header class="app-header">
+      <div class="brand">🌍 英语空间 <span class="brand-sub">English Space</span></div>
+      <div class="header-stat" id="header-streak">🔥 0 天</div>
+    </header>
+
+    <main id="views">
+      <!-- 英语空间 中枢 -->
+      <section class="view" id="view-space">
+        <div class="hero">
+          <h1>进入你的英语环境</h1>
+          <p>选一个场景，开口练对话，词汇自动沉淀进复习。</p>
+        </div>
+        <h2 class="sec-title">🎭 沉浸场景</h2>
+        <div class="scene-grid-cards" id="scene-cards"></div>
+        <h2 class="sec-title">🧰 练习模块</h2>
+        <div class="mod-grid" id="mod-cards"></div>
+      </section>
+
+      <!-- 场景沉浸页 -->
+      <section class="view" id="view-scene" hidden></section>
+
+      <!-- 词汇学习 -->
+      <section class="view" id="view-vocab" hidden></section>
+
+      <!-- 口语练习 -->
+      <section class="view" id="view-speak" hidden></section>
+
+      <!-- 统计 -->
+      <section class="view" id="view-stats" hidden></section>
+
+      <!-- 设置 -->
+      <section class="view" id="view-settings" hidden></section>
+    </main>
+
+    <nav class="bottom-nav">
+      <button class="nav-btn active" data-go="space">🏠<span>空间</span></button>
+      <button class="nav-btn" data-go="vocab">📚<span>词汇</span></button>
+      <button class="nav-btn" data-go="speak">🎤<span>口语</span></button>
+      <button class="nav-btn" data-go="stats">📈<span>统计</span></button>
+      <button class="nav-btn" data-go="settings">⚙️<span>设置</span></button>
+    </nav>
+  </div>
+
+  <script src="words/cet4.js"></script>
+  <script src="words/cet6.js"></script>
+  <script src="words/ielts.js"></script>
+  <script src="words/daily.js"></script>
+  <script src="words/content.js"></script>
+  <script src="js/srs.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/scenes.js"></script>
+  <script src="js/scene.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
